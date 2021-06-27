@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F27EBA72688CF7300D1CAF9 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F27EBA62688CF7300D1CAF9 /* CategoryViewController.swift */; };
 		1F3C3102268859D400B01D2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3C3101268859D400B01D2C /* AppDelegate.swift */; };
 		1F3C3104268859D400B01D2C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3C3103268859D400B01D2C /* SceneDelegate.swift */; };
 		1F3C3106268859D400B01D2C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3C3105268859D400B01D2C /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F27EBA62688CF7300D1CAF9 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		1F3C30FE268859D400B01D2C /* CoreDataDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F3C3101268859D400B01D2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1F3C3103268859D400B01D2C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				1F3C311826885AF200B01D2C /* TodoListViewController.swift */,
+				1F27EBA62688CF7300D1CAF9 /* CategoryViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 				1F3C311F26885C3000B01D2C /* Item+CoreDataClass.swift in Sources */,
 				1F3C3106268859D400B01D2C /* ViewController.swift in Sources */,
 				1F3C310C268859D400B01D2C /* CoreDataDemo.xcdatamodeld in Sources */,
+				1F27EBA72688CF7300D1CAF9 /* CategoryViewController.swift in Sources */,
 				1F3C3102268859D400B01D2C /* AppDelegate.swift in Sources */,
 				1F3C3104268859D400B01D2C /* SceneDelegate.swift in Sources */,
 				1F3C311926885AF200B01D2C /* TodoListViewController.swift in Sources */,
