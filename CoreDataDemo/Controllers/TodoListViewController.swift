@@ -17,7 +17,6 @@ class TodoListViewController: UITableViewController {
         super.viewDidLoad()
         
         loadItems()
-        
     }
     
     // MARK: - Table view data source
@@ -30,8 +29,22 @@ class TodoListViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "ToDoCell", for: indexPath)
-        cell.textLabel?.text = itemArray[indexPath.row].title
+        let item = itemArray[indexPath.row]
+        cell.textLabel?.text = item.title
+        
+        cell.accessoryType = item.done ? .checkmark : .none
+        
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+       // itemArray[indexPath.row].done = !itemArray[indexPath.row].done
+        
+        context.delete(itemArray[indexPath.row])
+        itemArray.remove(at: indexPath.row)
+        
+        saveItem()
+        
     }
     
     @IBAction func addButtonPressed(_ sender: UIBarButtonItem) {
@@ -59,6 +72,7 @@ class TodoListViewController: UITableViewController {
         present(alertController, animated: true)
     }
     
+    //Add Items
     func saveItem() {
         do {
             try context.save()
@@ -69,6 +83,7 @@ class TodoListViewController: UITableViewController {
         tableView.reloadData()
     }
     
+    //Load Items
     func loadItems() {
         let request: NSFetchRequest<Item> = Item.fetchRequest()
         
